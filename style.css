@@ -140,10 +140,10 @@ align-items: center;
         font-size: 15px;
     }
     .back{
-        transform: translateX(-10px);
+        margin-left:10px;
         margin-top: 15px;
-        height: 690px;
-        border-bottom-right-radius: 200px;
+        height: 700px;
+        border-bottom-right-radius: 180px;
     }
     .scoical-links img{
         height: 13px;

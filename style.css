@@ -1,0 +1,156 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+.back{
+    margin-left: 15px;
+    width: 98%;
+    height: 700px;
+    margin-top: 30px;
+    background: linear-gradient(to bottom right ,rgb(130, 14, 130), #ee9ae5);
+    border-bottom-right-radius: 300px;
+    border-top-left-radius: 60px;
+}
+.fulllogopic{
+    width: 15%;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+.row1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+.row1 h1{
+    font-size: 54px;
+}
+.row1 h3{
+    font-size: 30px;
+    color: #070707;
+    font-weight: 100;
+    margin: 20px 0px 10px;
+}
+.row1 h3{
+    font-size: 16px;
+    color: #b7b7b7;
+    font-weight: 100;
+}
+.row1 p{
+    margin-bottom: 10px;
+}
+button{
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: white;
+    background:linear-gradient(to right, #fb5283 , #ff3527) ;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+    margin-bottom: 10px;
+}
+button img{
+    width: 30px;
+    display: none;
+}
+button:hover img{
+    display: block;
+}
+button:hover{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row1::after{
+    content: '';
+    width: 5px;
+    height: 50%;
+    background: linear-gradient(#ff469f,#ff6062);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+.row2{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+.row2 .controller{
+    width: 70%;
+    z-index: 10;
+}
+.colorbox{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(#ff54a2,#ff575a);
+    border-radius: 20px 0 150px 20px ;
+    width: 80%;
+    height: 100%;
+}
+.scoical-links img{
+    height: 13px;
+    margin: 20px;
+    cursor: pointer;
+}
+.scoical-links{
+    margin-top: 10px;
+align-items: center;
+}
+@media only screen and (max-width:700px) {
+    .fulllogopic{
+        width: 35%;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    .left{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .colorbox{
+        border-radius: 20px 0px  0px 20px ;
+    }
+    .row2{
+        flex-basis: 100%;
+        margin-bottom: 40px;
+    }
+    .controller{
+        margin-left: 30px;
+        width: 40%;
+    }
+    .row1{
+       flex-basis: 100%;
+    }
+    .row1 h1{
+        font-size:35px ;
+    }
+    .row1 h3{
+        font-size: 15px;
+    }
+    .back{
+        height: 800px;
+        border-bottom-right-radius: 200px;
+    }
+    .scoical-links img{
+        height: 13px;
+        margin: 20px;
+        cursor: pointer;
+        margin-right: 2px;
+    }
+    .scoical-links{
+        margin-left: 60px;
+        margin-top: 8px;
+    }
+}
